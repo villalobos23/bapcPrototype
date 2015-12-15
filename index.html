@@ -54,77 +54,97 @@
         <fieldset>
         <legend>General</legend>  
          <div class="row" style="margin-left:9px;">
-           <div class="col-md-14">
+           <div class="col-md-6">
              <label>Tipo Solicitud</label>
-             <select>
+             <select class="form-control">
                <option>1</option>
              </select>
              <label>Nº Solicitud</label>
-             <input type="text">
+             <input class="form-control" type="text">
+             </div>
+             <div class="col-md-6">
              <label>Recibo de Pago</label>
-             <input type="text">
+             <input class="form-control" type="text">
            </div>
          </div>
         </fieldset>
         <fieldset>
           <legend>Datos Propietario</legend>
           <div class="row" style="margin-left:9px;">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <div class="form-group">
                 <label>Identificacion</label>
-                <select>
-                 <optgroup label="Natural"> 
-                  <option>V</option>
-                  <option>E</option>
-                  <option>P</option>
-                 </optgroup>
-                 <optgroup label="Juridico"> 
-                  <option>J</option>
-                  <option>G</option>
-                  <option>C</option>
-                 </optgroup>
-                </select>
-                <input type="text">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">V <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">V</a></li>
+                        <li><a href="#">E</a></li>
+                        <li><a href="#">P</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">J</a></li>
+                        <li><a href="#">G</a></li>
+                        <li><a href="#">C</a></li>
+                      </ul>
+                    </div><!-- /btn-group -->
+                  <input type="text" class="form-control" aria-label="...">
+                </div><!-- /input-group -->
                 </div>
+                </div>
+                <div class="col-md-6">  
                 <div class="form-group">
                 <label>Dirección</label>
                 <textarea class="form-control"></textarea>
-              </div>
-            </div>
+                </div>
+                </div>
           </div>
         </fieldset>
           <fieldset>
             <legend>Inscripcion Catastral/Certificado de Empadronamiento</legend>
             <div class="row" style="margin-left:9px;">
-              <div class="col-md-14">
+              <div class="col-md-6">
+                
                 <div class="form-group">
-                 <div class="checkbox">
-                   <label>
-                    <input type="checkbox"/>Certificado de Empadronamiento
-                  </label>
+                   <div class="checkbox">
+                     <label>
+                      <input type="checkbox"/>Certificado de Empadronamiento
+                    </label>
+                   </div>
                  </div>
                  <div class="form-group">  
                    <label>Nro Inscripcion</label>
-                   <input type="text"/>
+                   <input class="form-control"type="text"/>
+                   </div>
+                 <div class="form-group">
                    <label>Parroquia</label>
-                   <select>
+                   <select class="form-control">
                      <option>Parroquia Esmeralda</option>
                      <option>El Morro</option>
                    </select>
+                   </div>
+                 <div class="form-group">
                    <label>Estatus</label>
-                   <input type="text"/>
+                   <input class="form-control" type="text"/>
+                   </div>
+                 <div class="form-group">
                    <label>Nro Inscripcion</label>
-                   <input type="text"/>
+                   <input class="form-control" type="text"/>
                  </div>
+                 </div>
+                 <div class="col-md-6">
                  <div class="form-group">  
                    <label>Fecha Aprobación</label>
-                   <input type="date"/>
+                   <input class="form-control" type="date"/>
+                   </div>
+                 <div class="form-group">
                    <label>Procesado Por</label>
-                   <input type=text/>
+                   <input class="form-control" type=text/>
+                   </div>
+                 <div class="form-group">
                    <label>Aprobado Por</label>
-                   <input type=text/>
+                   <input class="form-control" type=text/>
                  </div>
-                </div>
+                
               </div>
             </div>
           </fieldset>
